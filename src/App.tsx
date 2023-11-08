@@ -8,6 +8,9 @@ function ConventionalHeading({ title }: { title?: string }) {
 
 
 // -------------  Child Type = ReactNode, returns ReactElement  ------------------------
+// React.ReactNode is ReactElement or string or whateverish 
+// ReactElement is object with type and props
+
 function HeadingWithChildren({ children }: { children: ReactNode }): ReactElement {
   return <h1>{children}</h1>
 }
